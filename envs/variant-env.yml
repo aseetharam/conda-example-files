@@ -1,0 +1,12 @@
+name: variant-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - samtools
+  - bcftools
+  - vcftools
+  - freebayes
+  - gatk4       # Genome Analysis Toolkit
+  - picard      # Picard toolkit (BAM/VCF utilities)

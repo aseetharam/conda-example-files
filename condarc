@@ -1,0 +1,37 @@
+# .condarc
+# Conda configuration file
+# Place in ~/.condarc or ~/.conda/config.yaml
+
+# Always use community channels first
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+# Make channel resolution predictable
+channel_priority: strict
+
+# Where to install environments
+#  -> First entry is project space (large quota)
+#  -> Second entry is fallback in $HOME
+envs_dirs:
+  - /depot/projectspace/$USER/envs
+  - ~/.conda/envs
+
+# Where to cache downloaded packages
+#  -> Use project space to avoid filling $HOME
+pkgs_dirs:
+  - /depot/projectspace/$USER/pkgs
+  - ~/.conda/pkgs
+
+# Don’t clutter base environment – keep it clean
+#  (always create new envs)
+auto_activate_base: false
+
+# Reduce solver noise, only show important messages
+always_yes: true
+quiet: true
+
+# Helpful defaults
+#  -> Show channel URLs so you know where packages came from
+show_channel_urls: true

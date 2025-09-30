@@ -1,0 +1,9 @@
+name: assembly-env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - spades
+  - abyss
+  - quast
+  - samtools

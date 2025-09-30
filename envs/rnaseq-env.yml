@@ -1,0 +1,16 @@
+name: rnaseq-env
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - python=3.11
+  - mamba
+  - fastqc
+  - multiqc
+  - cutadapt
+  - hisat2
+  - samtools
+  - seqtk
+  - star
+  - subread
