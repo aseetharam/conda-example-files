@@ -29,7 +29,7 @@ hisat2 -x reference_index -U trimmed.fastq -S aln.sam
 samtools view -Sb aln.sam > aln.bam
 multiqc .
 
-# files can be edited directly on the cluster
+# editing files is easy!
 
 # --- Post-job info ---
 jobinfo $SLURM_JOB_ID
