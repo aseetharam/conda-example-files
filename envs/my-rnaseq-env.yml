@@ -1,0 +1,14 @@
+name: rnaseq-env
+channels:
+  - conda-forge
+dependencies:
+  - star
+  - multiqc
+  - subread
+  - seqtk
+  - python=3.11
+  - hisat2
+  - samtools
+  - fastqc
+  - cutadapt
+prefix: /home/aseethar/.conda/envs/rocky9/2025.09/rnaseq-env
